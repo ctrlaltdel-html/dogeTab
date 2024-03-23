@@ -14,7 +14,7 @@
     }
     
   
-   p {
+   .paragraph {
      margin-top: 50px; 
      color: #ffffff;
     }
@@ -25,6 +25,7 @@ background: #1f1f1f;
 box-shadow:  20px 20px 60px #1a1a1a,
              -20px -20px 60px #242424;
 height: 50px;
+       color: white;
        
     }
        
@@ -40,10 +41,15 @@ height: 50px;
  margin-top: 200px;
  font-size: 80px;
 }
-     a {
-     margin-top: 100px; 
+    
+   fieldset {
+      text-align: center;
+     font-family: sans-serif;
      color: #ffffff;
-    }
+     margin-top: 50px;
+     border-radius: 20px;
+     padding: 20px;
+    }    
     
   </style>
 </head>
@@ -51,7 +57,7 @@ height: 50px;
 <div>
   <h1>dogeTab</h1>
   
-  <p>Type a URL here...</p>
+  <p class="paragraph">Type a URL here...</p>
 
     <input class="searchBox" type="text" placeholder="Include https://" id="field" />
     <button id="myBtn" class="searchEnter">Go</button>
@@ -66,13 +72,14 @@ height: 50px;
 
             window.open(url);
         });
-    
     </script>
-
-
-
-  
-  <a href="www.google.com">Google</a>
 </div>
+  <fieldset>
+    <p>Suggested Sites:</p>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://codepen.io">CodePen</a>
+    <a href="https://duckduckgo.com">DuckDuckGo</a>
+    <a href="https://www.youtube.com">YouTube</a>
+  </fieldset>    
 </body>
 </html>
